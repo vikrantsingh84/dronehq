@@ -5,12 +5,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("src/img*");
 
     eleventyConfig.setTemplateFormats([
-        "css", // css is not yet a recognized template extension in Eleventy
-        "jpg",
-        "gif",
-        "png",
-        "webp"
-      ]);
+      "css", // css is not yet a recognized template extension in Eleventy
+      "jpg",
+      "gif",
+      "png",
+      "webp",
+      "njk"
+    ]);
 
     return{
         dir:{
@@ -18,6 +19,8 @@ module.exports = function(eleventyConfig) {
             output:"dist"
         }
     };
+
+    
 
 
   };
